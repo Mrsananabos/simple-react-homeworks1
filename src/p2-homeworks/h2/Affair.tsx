@@ -9,11 +9,15 @@ type AffairPropsType = {
 
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => props.deleteAffairCallback(props.affair._id)
+    const style = (priorityName: string) => {
+        return
+    }
 
     return (
-        <div>
-            {props.affair.name} {props.affair.priority}
-            <button onClick={deleteCallback}>X</button>
+        <div style={{display: 'flex'}}>
+            <div className="name" style={{margin: '10px', width: '100px'}}>{props.affair.name}</div>
+            <div className="priority" style={{margin: '10px', width: '100px'}}>{props.affair.priority}</div>
+            <button style={{margin: '10px', width: '100px'}} onClick={deleteCallback}>X</button>
         </div>
     )
 }

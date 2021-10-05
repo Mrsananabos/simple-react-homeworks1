@@ -39,9 +39,8 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): A
     }
 }
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
-    debugger
     let copyAffairs = [...affairs]
-    return copyAffairs.filter(affair => affair._id != _id)
+    return copyAffairs.filter(affair => affair._id !== _id)
 }
 
 function HW2() {
@@ -54,14 +53,12 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
-
+            Homeworks 2:
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
                 setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
+                deleteAffairCallback={deleteAffairCallback}/>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}

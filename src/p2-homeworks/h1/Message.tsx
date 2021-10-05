@@ -14,10 +14,13 @@ function Message(props: PropsType) {
             <div className={s.message}>
                 <img alt={'userIcon'} src={props.avatar}/>
             </div>
-            <div className={s.box}>
-                <div className={s.userName}>{props.name}:</div>
-                <div>{props.message}</div>
-                <div>{props.time}</div>
+
+            <div className={s.angle}/>
+
+            <div className={s.content}>
+                <div className={s.userName}>{props.name}</div>
+                <div className={s.text}>{props.message}</div>
+                <div className={s.time}>{props.time}</div>
             </div>
         </div>
     )

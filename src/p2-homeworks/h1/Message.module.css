@@ -1,5 +1,6 @@
 .messageWrapper{
     display:flex;
+    align-items: flex-end;
 }
 
 .message {
@@ -12,13 +13,31 @@
     border-radius: 50%;
 }
 
-.box {
-    width: 200px;
-    padding: 15px;
-    background: dimgray;
-    border-radius: 20px;
+.content {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px 5px 5px 0;
 }
 
 .userName{
     color: orchid;
+}
+
+.angle{
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(255, 255, 255, 0.3) 0);
+}
+
+.text{
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.time{
+    display:flex;
+    justify-content: flex-end;
+    opacity: 0.6;
+    font-size: 13px;
 }

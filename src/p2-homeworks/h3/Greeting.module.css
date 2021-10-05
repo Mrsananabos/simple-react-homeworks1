@@ -2,6 +2,15 @@
 
 }
 
-.error {
+.inputError {
     border: 1px solid red;
+}
+
+.error {
+    color: red;
+}
+
+.greeting {
+    display: flex;
+    align-items: flex-start;
 }
