@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+
+}
+
+.item {
+    margin: 10px;
+    width: 100px;
+    height: 15px;
+}
+
+.button{
+    height: 30px;
+    width: 30px;
+}
+
+.high {
+    color: red;
+}
+
+.middle {
+    color: gold;
+}
+
+.low {
+    color: green;
+}
