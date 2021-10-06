@@ -12,7 +12,6 @@ const messageData = {
 function HW1() {
     return (
         <div className={s.wrapper}>
-            <hr/>
             Homeworks 1:
             <br/><br/>
             <Message
@@ -21,7 +20,6 @@ function HW1() {
                 message={messageData.message}
                 time={messageData.time}
             />
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
             {/*<hr/>*/}
